@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="misc-page-nav">
+      <nav class="navbar navbar-full">
+        <a class="navbar-brand navbar-clappy" href=""><img src="img/clappy.svg"></a>
+        <a class="navbar-brand" href="#"><img src="img/logo.svg"></a>
+        <a class="pull-xs-right facebook" href="https://m.facebook.com/lifesliceapp"><img src="img/facebook.svg"></a>
+        <a class="pull-xs-right twitter" href="https://twitter.com/lifesliceapp"><img src="img/twitter.svg"></a>
+      </nav>
+    </div>
+    <div class="row" id="upload-page-body">
+      <div id="message" style="display:none;"></div>
+      <!--  <input type="file" accept="video/*" /> -->
+      <video controls autoplay id="myVideo" style="display: none;"></video>
+      <form action="" method="POST">
+        <input type="file" multiple accept="video/*">
+        <p>Drag your files here or click in this area.</p>
+      <!--  <button type="submit">Upload</button> -->
+      </form>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Bootstrap JS. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="js/video.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('form input').change(function() {
+        $('form p').text(this.files.length + " file(s) selected");
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(function() {
+      $("input:file").change(function() {
+        setTimeout(
+          function() {
+            myFunction();
+          }, 1000);
+      });
+    });
+  </script>
+</body>
+
+</html>
