@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="26px" viewBox="0 0 64 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>7CA1C092-A916-4BF1-BB0F-1334486412CC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="26" rx="13"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="64" height="26" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="presskit" transform="translate(-366.000000, -2977.000000)">
+            <g id="btn_download-png" transform="translate(366.000000, 2977.000000)">
+                <text id="PNG" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" line-spacing="12" fill="#9B9B9B">
+                    <tspan x="20" y="18">PNG</tspan>
+                </text>
+                <use id="Rectangle-112" stroke="#DDDDDD" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

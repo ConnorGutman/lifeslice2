@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="147px" height="38px" viewBox="0 0 147 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>7D7F4807-78F3-4129-9493-1194E4A829B9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="presskit" transform="translate(-609.000000, -391.000000)">
+            <g id="btn_download-all" transform="translate(609.000000, 391.000000)">
+                <rect id="Rectangle-173" fill="#449DCD" x="0" y="0" width="147" height="38" rx="19"></rect>
+                <text id="Download-All" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="14" fill="#FFFFFF">
+                    <tspan x="32" y="25">Download All</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
