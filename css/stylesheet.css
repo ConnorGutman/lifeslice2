@@ -55,7 +55,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     line-height: 1.3;
-    font-weight: 700;
+    font-weight: 500;
     color: #ffffff; }
     @media (min-width: 48em) {
       #intro h1 {
@@ -65,7 +65,8 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.3;
-    color: #ffffff; }
+    color: #ffffff;
+    font-weight: 300; }
     @media (min-width: 48em) {
       #intro h2 {
         font-size: 18px;
@@ -356,8 +357,9 @@ nav {
   #footer .copyright p {
     font: 'Roboto', sans-serif;
     font-size: 15px;
-    line-height: 1.0;
-    color: #4a4a4a; }
+    line-height: 1.5;
+    color: #4a4a4a;
+    opacity: 0.7; }
     @media (max-width: 48em) {
       #footer .copyright p {
         padding-top: 17px; } }
@@ -370,6 +372,8 @@ nav {
       #footer .footer-nav a {
         font-size: 15px;
         line-height: 0.5; } }
+    #footer .footer-nav a p {
+      opacity: 0.7; }
   #footer .footer-nav .footer-title {
     font: 'Roboto', sans-serif;
     font-size: 14px;
@@ -384,7 +388,10 @@ nav {
     margin-right: 25px; }
 
 #misc-page-nav {
+  height: 90px;
   background-image: radial-gradient(circle at 53% 50%, #87c0df, #449dcd); }
+  #misc-page-nav nav {
+    padding: 25px 100px !important; }
 
 .presskit-padding {
   padding: 70px 20px 128px !important; }
@@ -435,6 +442,7 @@ nav {
     color: #449dcd; }
   #misc-page-body .download-all {
     width: auto;
+    margin-top: 40px;
     margin-bottom: 16px; }
   #misc-page-body .logos {
     width: 50%;
@@ -448,12 +456,12 @@ nav {
         float: left; } }
   #misc-page-body .col-sm-2 {
     padding: 0; }
-    #misc-page-body .col-sm-2 a {
-      text-decoration: none; }
-      #misc-page-body .col-sm-2 a:hover h5 {
-        color: #449dcd !important; }
-    #misc-page-body .col-sm-2 .first {
-      color: #449dcd !important; }
+    #misc-page-body .col-sm-2 span {
+      position: fixed; }
+      #misc-page-body .col-sm-2 span a {
+        text-decoration: none; }
+        #misc-page-body .col-sm-2 span a:hover h5 {
+          color: #449dcd !important; }
     @media (max-width: 48em) {
       #misc-page-body .col-sm-2 {
         display: none; } }
@@ -588,53 +596,47 @@ nav {
   padding: 72px 182px 128px;
   background-color: #f7f7f7;
   height: 80vh; }
-
-form {
-  position: absolute;
-  top: 30vh;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 640px;
-  height: 360px;
-  background-color: #dddddd; }
-
-form p {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 170px;
-  color: black;
-  font-family: Arial; }
-
-form input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0; }
-
-form button {
-  margin: 0;
-  color: #fff;
-  background: #16a085;
-  border: none;
-  width: 508px;
-  height: 35px;
-  margin-top: -20px;
-  margin-left: -4px;
-  border-radius: 4px;
-  border-bottom: 4px solid #117A60;
-  transition: all .2s ease;
-  outline: none; }
-
-form button:hover {
-  background: #149174;
-  color: #0C5645; }
-
-form button:active {
-  border: 0; }
+  #upload-page-body form {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 640px;
+    height: 360px;
+    background-color: #dddddd; }
+  #upload-page-body form p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 170px;
+    color: black;
+    font-family: Arial; }
+  #upload-page-body form input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0; }
+  #upload-page-body form button {
+    margin: 0;
+    color: #fff;
+    background: #16a085;
+    border: none;
+    width: 508px;
+    height: 35px;
+    margin-top: -20px;
+    margin-left: -4px;
+    border-radius: 4px;
+    border-bottom: 4px solid #117A60;
+    transition: all 0.2s ease;
+    outline: none; }
+  #upload-page-body form button:hover {
+    background: #149174;
+    color: #0C5645; }
+  #upload-page-body form button:active {
+    border: 0; }
 
 /*# sourceMappingURL=stylesheet.css.map */
