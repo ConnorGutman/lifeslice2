@@ -69,7 +69,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     line-height: 1.3;
-    font-weight: 700;
+    font-weight: 500;
     color: #ffffff;
     @media (min-width: 48em) {
       font-size: 28px;
@@ -81,6 +81,7 @@ nav {
     font-size: 15px;
     line-height: 1.3;
     color: #ffffff;
+    font-weight: 300;
     @media (min-width: 48em) {
       font-size: 18px;
       line-height: 1.2;
@@ -448,8 +449,9 @@ nav {
     p {
       font: 'Roboto', sans-serif;
       font-size: 15px;
-      line-height: 1.0;
+      line-height: 1.5;
       color: #4a4a4a;
+      opacity: 0.7;
       @media(max-width: 48em) {
         padding-top: 17px;
       }
@@ -464,6 +466,9 @@ nav {
       @media(min-width: 48em) {
         font-size: 15px;
         line-height: 0.5;
+      }
+      p {
+        opacity: 0.7;
       }
     }
     .footer-title {
@@ -484,7 +489,11 @@ nav {
 }
 //OTHER PAGES
 #misc-page-nav {
+  height: 90px;
   background-image: radial-gradient(circle at 53% 50%, #87c0df, #449dcd);
+  nav {
+    padding: 25px 100px !important;
+  }
 }
 .presskit-padding {
   padding: 70px 20px 128px !important;
@@ -544,6 +553,7 @@ nav {
   }
   .download-all {
     width: auto;
+    margin-top: 40px;
     margin-bottom: 16px;
   }
   .logos {
@@ -562,16 +572,16 @@ nav {
   }
   .col-sm-2 {
     padding: 0;
-    a {
-      text-decoration: none;
-      &:hover {
-        h5 {
-        color:#449dcd !important;
+    span {
+      position: fixed;
+      a {
+        text-decoration: none;
+        &:hover {
+          h5 {
+            color: #449dcd !important;
+          }
+        }
       }
-      }
-    }
-    .first {
-      color: #449dcd !important;
     }
     @media(max-width: 48em) {
       display: none;
@@ -713,7 +723,6 @@ nav {
       width: 100%;
     }
   }
-
   .clappies-wrapper {
     float: left;
     width: 50%;
@@ -748,12 +757,11 @@ nav {
     }
   }
 }
-
 #upload-page-body {
   padding: 72px 182px 128px;
   background-color: #f7f7f7;
   height: 80vh;
-  form{
+  form {
     position: absolute;
     top: 30vh;
     left: 0;
@@ -763,7 +771,7 @@ nav {
     height: 360px;
     background-color: #dddddd;
   }
-  form p{
+  form p {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -771,7 +779,7 @@ nav {
     color: black;
     font-family: Arial;
   }
-  form input{
+  form input {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -780,7 +788,7 @@ nav {
     outline: none;
     opacity: 0;
   }
-  form button{
+  form button {
     margin: 0;
     color: #fff;
     background: #16a085;
@@ -791,19 +799,15 @@ nav {
     margin-left: -4px;
     border-radius: 4px;
     border-bottom: 4px solid #117A60;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
     outline: none;
   }
-  form button:hover{
+  form button:hover {
     background: #149174;
-  	color: #0C5645;
+    color: #0C5645;
   }
-  form button:active{
-    border:0;
+  form button:active {
+    border: 0;
   }
-
 }
-
-
-
 //Upload page
