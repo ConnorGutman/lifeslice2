@@ -10,6 +10,8 @@ hr {
       margin-right: 0; } }
 
 .download-btn {
+  width: 146px;
+  height: auto;
   margin-top: 25px;
   padding: 10px 0; }
 
@@ -47,9 +49,13 @@ nav {
         margin-top: -10px; } }
   nav .facebook {
     margin-left: 25px; }
+  nav .twitter img {
+    padding-top: 1.5px;
+    padding-bottom: 1.5px; }
 
 #intro {
-  background-image: radial-gradient(circle at 53% 50%, #87c0df, #449dcd);
+  background-image: url("../img/bg-header.png");
+  background-size: cover;
   padding-bottom: 285px; }
   #intro h1 {
     font-family: 'Roboto', sans-serif;
@@ -73,6 +79,7 @@ nav {
         line-height: 1.2; } }
   #intro p {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 12px;
     line-height: 1.3;
     color: #ffffff; }
@@ -110,7 +117,8 @@ nav {
 
 #points {
   padding-top: 294px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background-image: url("../img/bg-featuresclappys.svg"); }
   @media (min-width: 48em) {
     #points {
       padding-top: 305px;
@@ -301,7 +309,8 @@ nav {
 #download {
   position: relative;
   height: 303px;
-  background-image: radial-gradient(circle at 53% 50%, #87c0df, #449dcd); }
+  background-image: url("../img/overlay-100-free.png");
+  background-size: cover; }
   #download .download-content {
     position: absolute;
     top: 0;
@@ -323,9 +332,12 @@ nav {
     #download .download-content p {
       font-family: 'Roboto', sans-serif;
       font-size: 12px;
+      font-weight: 500;
       line-height: 1.3;
       color: #ffffff; }
     #download .download-content .download-btn {
+      width: 146px;
+      height: auto;
       margin-top: 22px !important; }
   #download .download-bg {
     position: absolute;
@@ -339,7 +351,7 @@ nav {
 
 #footer {
   height: 230px;
-  padding: 40px 30px; }
+  padding: 40px 10px; }
   @media (min-width: 48em) {
     #footer {
       padding: 50px; } }
@@ -348,12 +360,12 @@ nav {
       padding: 0; } }
   #footer .copyright img {
     width: 86px;
-    height: 20px;
-    margin-bottom: 15px; }
+    height: 20px; }
     @media (min-width: 48em) {
       #footer .copyright img {
         width: 95px;
-        height: 22px; } }
+        height: 22px;
+        margin-bottom: 15px; } }
   #footer .copyright p {
     font: 'Roboto', sans-serif;
     font-size: 15px;
@@ -363,10 +375,16 @@ nav {
     @media (max-width: 48em) {
       #footer .copyright p {
         padding-top: 17px; } }
+  @media (max-width: 48em) {
+    #footer .social {
+      margin-top: 60px; } }
+  @media (max-width: 48em) {
+    #footer .footer-nav {
+      padding: 0 !important; } }
   #footer .footer-nav a {
     font: 'Roboto', sans-serif;
     font-size: 14px;
-    line-height: 1;
+    line-height: 0.5;
     color: #4a4a4a; }
     @media (min-width: 48em) {
       #footer .footer-nav a {
@@ -374,22 +392,28 @@ nav {
         line-height: 0.5; } }
     #footer .footer-nav a p {
       opacity: 0.7; }
+  @media (max-width: 48em) {
+    #footer .footer-nav .col-xs-4 {
+      padding: 0; } }
   #footer .footer-nav .footer-title {
     font: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.4;
     font-weight: 600;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+    margin-bottom: 20px; }
     @media (min-width: 48em) {
       #footer .footer-nav .footer-title {
         font-size: 18px;
         line-height: 1.1; } }
   #footer .twitter-footer {
-    margin-right: 25px; }
+    margin-right: 25px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px; }
 
 #misc-page-nav {
   height: 90px;
-  background-image: radial-gradient(circle at 53% 50%, #87c0df, #449dcd); }
+  background-image: url("../img/bg-header.png"); }
   #misc-page-nav nav {
     padding: 25px 100px !important; }
 
@@ -404,14 +428,18 @@ nav {
   background-color: #f7f7f7; }
   #misc-page-body h1 {
     font-size: 24px;
+    line-height: 24px;
     font-weight: 700;
     color: #449dcd; }
   #misc-page-body h2 {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 15px;
     font-weight: 700;
     color: #449dcd; }
   #misc-page-body h3 {
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 500;
     color: #9b9b9b; }
   #misc-page-body h4 {
     margin-top: 64px;
@@ -428,6 +456,7 @@ nav {
     margin-bottom: 32px; }
     #misc-page-body .section-bar span {
       font-size: 20px;
+      font-weight: 600;
       background-color: #F3F5F6;
       padding: 0 10px;
       line-height: 1;
@@ -436,8 +465,13 @@ nav {
     font-size: 15px;
     color: #9b9b9b;
     line-height: 1; }
+  #misc-page-body .vertical-list p {
+    margin-bottom: 0; }
+    #misc-page-body .vertical-list p:last-of-type {
+      margin-bottom: 16px; }
   #misc-page-body p {
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 19px; }
   #misc-page-body a {
     color: #449dcd; }
   #misc-page-body .download-all {
@@ -454,6 +488,8 @@ nav {
     @media (max-width: 48em) {
       #misc-page-body .logos:nth-of-type(3) {
         float: left; } }
+    #misc-page-body .logos:nth-of-type(3) {
+      margin-top: 3px; }
   #misc-page-body .col-sm-2 {
     padding: 0; }
     #misc-page-body .col-sm-2 span {
@@ -492,8 +528,9 @@ nav {
   #misc-page-body #logo1-wrapper {
     float: left;
     width: 50%;
-    height: 188px;
+    height: 189px;
     background-color: #ffffff;
+    margin-top: 4px;
     padding: 35px 20px; }
     #misc-page-body #logo1-wrapper img {
       height: 24px;
@@ -638,5 +675,9 @@ nav {
     color: #0C5645; }
   #upload-page-body form button:active {
     border: 0; }
+
+@media (max-width: 34em) {
+  .a-tos {
+    line-height: 1 !important; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
