@@ -148,6 +148,8 @@ nav {
   padding-top: 294px;
   padding-bottom: 100px;
   background-image: url('../img/bg-featuresclappys.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
   @media (min-width: 48em) {
     padding-top: 305px;
     padding-bottom: 60px;
@@ -525,7 +527,7 @@ nav {
   background-image: url('../img/bg-header.png');
   //background-image: radial-gradient(circle at 53% 50%, #87c0df, #449dcd);
   nav {
-    padding: 25px 100px !important;
+    padding: 31px 100px 0 100px !important;
   }
 }
 .presskit-padding {
@@ -535,8 +537,11 @@ nav {
   }
 }
 #misc-page-body {
-  padding: 72px 182px 128px;
+  padding: 72px 20px 20px;
   background-color: #f7f7f7;
+  @media(min-width: 48em) {
+    padding: 72px 182px 128px;
+  }
   h1 {
     font-size: 24px;
     line-height: 24px;
@@ -551,9 +556,12 @@ nav {
   }
   h3 {
     font-size: 14px;
-    line-height: 15px;
     font-weight: 500;
+    line-height: 19px;
     color: #9b9b9b;
+    @media(min-width: 48em) {
+      line-height: 15px;
+    }
   }
   h4 {
     margin-top: 64px;
